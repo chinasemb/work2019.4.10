@@ -1,0 +1,24 @@
+html,body{
+    height: 100%;
+}
+.container{
+    height: 100%;
+    background-color: aquamarine;
+    overflow: scroll;
+}
+.container .div{
+    border: 1px solid red;
+    display: flex;
+    height: 3.8rem;
+}
+.container .innerItem{
+    border: 1px solid darkgoldenrod;
+    flex-wrap: wrap;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+
+body {
+    width: 7.5rem;
+}
