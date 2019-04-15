@@ -1,0 +1,119 @@
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.wrap{
+    height: 100vh;
+    background-color: antiquewhite; 
+}
+.wrap .map{
+    margin-top: 30%;
+}
+.region button {
+    width: 1.5rem;
+    height: .7rem;
+    background-color:salmon; 
+    transform: rotate(90deg);
+    border-radius: 2px 2px;
+    z-index: 2;
+} 
+.region .region-button1{
+    top: 75%;
+    left: 76%; 
+    font-size: .1rem;
+}
+.region .region-button2{
+    top: 67%;
+    left: 38%; 
+    font-size: .1rem;   
+}
+.region .region-button3{
+    top: 63%;
+    left: 60%; 
+    font-size: .1rem;   
+}
+.region .region-button4{
+    top: 60%;
+    left: 12%; 
+    font-size: .1rem;  
+}
+.region .region-button5{
+    top: 49%;
+    left: 26%; 
+    font-size: .1rem;  
+}
+.region .region-button6{
+    top: 35%;
+    left: 57%; 
+    font-size: .1rem;   
+}
+
+
+.wrap .article .art1{
+    transform: rotate(90deg);
+    width: 12rem ;
+    height: 9rem ;
+    background-color: antiquewhite;
+    top: 24%;
+    left: -9%;
+    display: none;
+    border: 2px solid rgb(135, 189, 189);
+    border-radius: .2rem;
+}
+.wrap .article .art6{
+    transform: rotate(90deg);
+    width: 12rem ;
+    height: 9rem ;
+    background-color: antiquewhite;
+    top: 24%;
+    left: -9%;
+    display: none;
+    border: 2px solid rgb(135, 189, 189);
+    border-radius: .2rem;
+}
+.wrap .article .art2{
+    transform: rotate(90deg);
+    width: 12rem ;
+    height: 9rem ;
+    background-color: antiquewhite;
+    top: 24%;
+    left: -9%;
+    display: none;
+    border: 2px solid rgb(135, 189, 189);
+    border-radius: .2rem;
+}
+.wrap .article .art3{
+    transform: rotate(90deg);
+    width: 12rem ;
+    height: 9rem ;
+    background-color: antiquewhite;
+    top: 24%;
+    left: -9%;
+    display: none;
+    border: 2px solid rgb(135, 189, 189);
+    border-radius: .2rem;
+}
+.wrap .article .art4{
+    transform: rotate(90deg);
+    width: 12rem ;
+    height: 9rem ;
+    background-color: antiquewhite;
+    top: 24%;
+    left: -9%;
+    display: none;
+    border: 2px solid rgb(135, 189, 189);
+    border-radius: .2rem;
+}
+.wrap .article .art5{
+    transform: rotate(90deg);
+    width: 12rem ;
+    height: 9rem ;
+    background-color: antiquewhite;
+    top: 24%;
+    left: -9%;
+    display: none;
+    border: 2px solid rgb(135, 189, 189);
+    border-radius: .2rem;
+}
