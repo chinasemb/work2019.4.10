@@ -1,0 +1,474 @@
+.logo{
+    width: 100vw;
+    height: 90vh;
+}
+
+.wrap {
+    /* background-image: url('../images/background.png'); */
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 830vh;
+    display: none;
+}
+
+.top {
+    width: 180vw;
+    transform: rotate(90deg);
+}
+
+.top1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.top2 {
+    width: 2rem;
+    position: fixed;
+    left: 4rem;
+    top: 16rem;
+    transform: rotate(90deg);
+    visibility: visible;
+    z-index: 99;
+}
+
+.header {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 50vw;
+    z-index: 999;
+}
+
+.menu,
+.brand-culture,
+.product-display,
+.shop-display,
+.cooperation-process,
+.cooperation-cost,
+.headquarters-support {
+    /* background-image: url('../images/background.png'); */
+    /* background-size: 100% 100%; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu-1 {
+    width: 1.5rem;
+    position: fixed;
+    left: 0.8rem;
+    top: 0.5rem;
+}
+
+.menu-2 {
+    width: 1rem;
+    position: fixed;
+    left: 3rem;
+    top: 0.4rem;
+}
+
+.menu-3 {
+    width: 1rem;
+    position: fixed;
+    left: 3rem;
+    top: 1.7rem;
+}
+
+.menu-4 {
+    width: 1rem;
+    position: fixed;
+    left: 1.7rem;
+    top: 2.5rem;
+}
+
+.menu-5 {
+    width: 1rem;
+    position: fixed;
+    left: 0.3rem;
+    top: 2.5rem;
+
+}
+
+.subMenu {
+    display: none;
+    transform: rotate(90deg);
+}
+
+.brand-culture {
+    position: relative;
+    height: 100vh;
+}
+
+.brand-culture-1 {
+    width: 70%;
+    margin-left: 2rem;
+    transform: rotate(90deg);
+    margin-top: -3rem;
+}
+
+.brand-culture-2 {
+    width: 2rem;
+    transform: rotate(90deg);
+    left: 0rem;
+    top: 3rem;
+    position: absolute;
+}
+
+.brand-culture-3 {
+    width: 1rem;
+    position: absolute;
+    left: 9rem;
+    top: 12rem;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.brand-culture-4 {
+    width: 2rem;
+    position: absolute;
+    left: -0.5rem;
+    top: 15rem;
+    transform: rotate(270deg);
+    z-index: 2;
+}
+
+.brand-culture-5 {
+    width: 2rem;
+    position: absolute;
+    left: 0rem;
+    top: 1rem;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.brand-culture-6 {
+    width: 1rem;
+    position: absolute;
+    left: 8rem;
+    top: 5rem;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.brand-culture-7 {
+    width: 1rem;
+    position: absolute;
+    left: 9rem;
+    top: 15rem;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.brand-culture-8 {
+    position: absolute;
+    left: -0.7rem;
+    top: 15rem;
+    transform: rotate(90deg);
+    z-index: 2;
+    width: 2rem;
+}
+
+.brand-culture-9 {
+    position: absolute;
+    left: -1rem;
+    top: 15rem;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.brand-culture-10 {
+    position: absolute;
+    left: 7.5rem;
+    top: 4rem;
+    transform: rotate(270deg);
+    z-index: 2;
+    width: 3rem;
+}
+.brand-culture-11{
+    width: 1rem;
+    position: absolute;
+    left: 8.8rem;
+    top: 5rem;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+.content {
+    position: relative;
+    transform: rotate(90deg);
+    margin-top: -1rem;
+}
+.content2{
+    width: 12rem;
+}
+.hand{
+    width: 1rem;
+    position: absolute;
+    left: 7rem;
+    top: 6rem;
+    animation: roate5 1s linear infinite;
+    animation-direction: alternate; 
+}
+.hand1{
+    width: 1rem;
+    position: absolute;
+    left: 18rem;
+    top: 2rem;
+    animation: roate5 1s linear infinite;
+    animation-direction: alternate;
+}
+.hand2{
+    width: 1rem;
+    position: absolute;
+    left: 3rem;
+    top: 15rem;
+    animation: roate4 1s linear infinite;
+    animation-direction: alternate;
+    transform: rotate(180deg);
+}
+.hand3{
+    width: 1rem;
+    position: absolute;
+    left: 3rem;
+    top: 15rem;
+    animation: roate4 1s linear infinite;
+    animation-direction: alternate;
+    transform: rotate(180deg);
+}
+.hand4{
+    width: 1rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 22rem;
+    animation: roate3 1s linear infinite;
+    animation-direction: alternate;
+    transform: rotate(90deg);
+}
+.hand5{
+    width: 1rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 31.5rem;
+    animation: roate3 1s linear infinite;
+    animation-direction: alternate;
+    transform: rotate(90deg);
+}
+@keyframes roate3{
+    0% {
+        margin-top:0rem;
+    }
+    50% {
+        margin-top: -0.5rem;
+    }
+    100% {
+        margin-top: 0rem;
+    }
+}
+@keyframes roate4{
+    0% {
+        margin-left:0rem;
+    }
+    50% {
+        margin-left: 0.5rem;
+    }
+    100% {
+        margin-left: 0rem;
+    }
+}
+@keyframes roate5{
+    0% {
+        margin-left:0rem;
+    }
+    50% {
+        margin-left: 1rem;
+    }
+    100% {
+        margin-left: 0rem;
+    }
+}
+.content1 {
+    position: absolute;
+    left: 9rem;
+    top: 6rem;
+    width: 2rem;
+}
+
+.product-display {
+    height: 100vh;
+    position: relative;
+}
+
+.product-display-1 {
+    width: 6rem;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 3rem;
+    top: -2rem;
+}
+.product-display-3{
+    width: 1rem;
+    position: absolute;
+    left: 4rem;
+    top: 3rem;
+    transform: rotate(90deg);
+}
+.product-display-4{
+    width: 1rem;
+    position: absolute;
+    left: 4rem;
+    top: 2rem;
+    transform: rotate(90deg);
+}
+.pic1,
+.pic2 {
+    transform: rotate(90deg);
+}
+
+.icon1,.icon2 {
+    width: 11rem;
+    position: absolute;
+    left: 12rem;
+    top: -3rem;
+}
+.icon5{
+    width: 2rem;
+    position: absolute;
+    left: 20.5rem;
+    top: 2rem;
+}
+
+.icon3,.icon4{
+    width: 1.7rem;
+}
+.icon3{
+    position: absolute;
+    left: 12rem;
+    top: 3rem;
+}
+.icon4{
+    position: absolute;
+    left: 16rem;
+    top: 3rem;
+}
+.icon2 {
+    display: none;
+}
+
+.shop-display {
+    position: relative;
+}
+
+.shop-display1 {
+    transform: rotate(90deg);
+    width: 10rem;
+    position: absolute;
+    left: 0rem;
+    top: 6rem;
+}
+
+.shop-display2 {
+    transform: rotate(90deg);
+    width: 1rem;
+    position: absolute;
+    left: 3rem;
+    top: 7rem;
+}
+
+.cooperation-process {
+    position: relative;
+}
+
+.product-display-2 {
+    width: 5.5rem;
+    margin-left: 2rem;
+    transform: rotate(90deg);
+    margin-top: -1rem;
+}
+
+.cooperation-process1 {
+    width: 10rem;
+    transform: rotate(90deg);
+}
+
+.cooperation-process2 {
+    width: 2rem;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 4rem;
+    top: 14.5rem;
+    z-index: 2;
+}
+
+.cooperation-cost {
+    position: relative;
+    height: 130vh;
+}
+
+.cooperation-cost1 {
+    width: 1.5rem;
+    transform: rotate(90deg);
+    margin-left: 4rem;
+    margin-top: -1rem;
+}
+
+.cooperation-cost2 {
+    width: 18rem;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -4rem;
+    top: 10rem;
+}
+
+.cooperation-cost3 {
+    width: 1.8rem;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 2rem;
+    top: 20rem;
+}
+
+.headquarters-support {
+    position: relative;
+    height: 200vh;
+}
+
+.headquarters-support1 {
+    transform: rotate(90deg);
+    width: 1.5rem;
+    position: absolute;
+    left: 4rem;
+    top: -1rem;
+}
+
+.headquarters-support2 {
+    width: 26rem;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -8rem;
+    top: 14rem;
+}
+
+.headquarters-support3 {
+    width: 1rem;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 3rem;
+    top: 29rem;
+}
+
+.headquarters-support4 {
+    width: 2rem;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 4rem;
+    top: 32rem;
+}
+/* iframe{
+    width: 200px;
+    height: 200px;
+    z-index: 999;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+} */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Initialization.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <img src="./images/logo.gif" alt="" class="logo" id='logo'>
+    <div class="wrap" id='wrap'>
+        <div class="header">
+            <img src="./images/2.png" alt="" class="menu-1">
+            <img src="./images/3.png" alt="" class="menu-2 subMenu" onclick="naver('A')">
+            <img src="./images/4.png" alt="" class="menu-3 subMenu" onclick="naver('B')">
+            <img src="./images/5.png" alt="" class="menu-4 subMenu" onclick="naver('C')">
+            <img src="./images/6.png" alt="" class="menu-5 subMenu" onclick="naver('D')">
+        </div>
+        <div class="menu">
+            <div class="top1" id="A">
+                <img src="./images/1.png" alt="" class="top">
+                <img src="./images/7.png" alt="" class="top2" id='cursor'>
+            </div>
+        </div>
+        <div class="brand-culture">
+            <img src="./images/8.png" alt="" class="brand-culture-1">
+            <img src="./images/9.png" alt="" class="brand-culture-2">
+            <img src="./images/brand-culture.png" alt="" class="brand-culture-3">
+            <img src="./images/brand-culture1.png" alt="" class="brand-culture-4">
+            <div class="content">
+                <img src="./images/28.png" alt="" class="content2">
+                <img src="./images/30.png" alt="" class="hand">
+                <a href="#"><img src="./images/10.png" alt="" class="content1"></a>
+            </div>
+        </div>
+        <div class="product-display" id="B">
+            <img src="./images/11.png" alt="" class="product-display-1">
+            <img src="./images/31.png" alt="" class="product-display-3">
+            <img src="./images/brand-culture.png" alt="" class="brand-culture-3">
+            <img src="./images/brand-culture2.png" alt="" class="brand-culture-5">
+            <div class="pic1">
+                <img src="./images/12.png" alt="" class="icon1">
+                <img src="./images/13.png" alt="" class="icon2">
+                <img src="./images/10.png" alt="" class="icon5">
+                <img src="./images/30.png" alt="" class="hand1">
+            </div>
+            <div class="pic2">
+                <img src="./images/14.png" alt="" class="icon3">
+                <img src="./images/15.png" alt="" class="icon4">
+
+            </div>
+        </div>
+        <div class="shop-display" id="C">
+            <img src="./images/17.png" alt="" class="product-display-4">
+            <!--  -->
+            <!-- <img src="./images/18.png" alt="" class="shop-display1"> -->
+            <!-- 地图 -->
+            <iframe src="./maps.html" frameborder="0" height="500px" width="500px"></iframe>
+
+            <!--  -->
+            <img src="./images/brand-culture3.png" alt="" class="brand-culture-6">
+            <img src="./images/brand-culture4.png" alt="" class="brand-culture-7">
+            <a href="#">
+                <img src="./images/10.png" alt="" class="shop-display2">
+            </a>
+        </div>
+        <div class="cooperation-process" id="D">
+            <img src="./images/19.png" alt="" class="product-display-2">
+            <img src="./images/20.png" alt="" class="cooperation-process1">
+            <a href="#">
+                <img src="./images/10.png" alt="" class="cooperation-process2">
+                <img src="./images/32.png" alt="" class="hand2">
+                <img src="./images/brand-culture.png" alt="" class="brand-culture-3">
+                <img src="./images/brand-culture1.png" alt="" class="brand-culture-4">
+            </a>
+        </div>
+        <div class="cooperation-cost">
+            <img src="./images/22.png" alt="" class="cooperation-cost1">
+            <img src="./images/23.png" alt="" class="cooperation-cost2">
+            <a href="#">
+                <img src="./images/10.png" alt="" class="cooperation-cost3">
+                <img src="./images/32.png" alt="" class="hand4">
+            </a>
+            <img src="./images/brand-culture3.png" alt="" class="brand-culture-11">
+            <img src="./images/brand-culture5.png" alt="" class="brand-culture-8">
+        </div>
+        <div class="headquarters-support">
+            <img src="./images/24.png" alt="" class="headquarters-support1">
+            <img src="./images/25.png" alt="" class="headquarters-support2">
+            <a href="#">
+                <img src="./images/26.png" alt="" class="headquarters-support3">
+            </a>
+            <img src="./images/32.png" alt="" class="hand5">
+            <img src="./images/27.png" alt="" class="headquarters-support4">
+            <img src="./images/brand-culture6.png" alt="" class="brand-culture-9">
+            <img src="./images/brand-culture7.png" alt="" class="brand-culture-10">
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/c.js"></script>
+<script>
+    // 消失出现
+    $('.menu-1').click(function () {
+        $('.subMenu').toggle()
+    });
+    // 光标闪烁
+    function Twinkle() {
+        var cursor = document.getElementById("cursor");
+        if (cursor.style.visibility == "visible")
+            cursor.style.visibility = "hidden";
+        else {
+            cursor.style.visibility = "visible";
+        }
+        setTimeout('Twinkle()', 500);
+    }
+    Twinkle();
+    // 选项卡
+    $('.icon3').click(function () {
+        $('.icon1').css({ 'display': 'block' });
+        $('.icon2').css({ 'display': 'none' });
+    })
+    $('.icon4').click(function () {
+        $('.icon1').css({ 'display': 'none' });
+        $('.icon2').css({ 'display': 'block' });
+    })
+    //设置锚点
+    function naver(id) {
+        var obj = document.getElementById(id);
+        var oPos = obj.offsetTop;
+        return window.scrollTo(0, oPos);
+    }
+    // 两秒后logo消失,主体内容出现
+    setTimeout(function () { document.getElementById("logo").style.display = "none"; }, 2000);
+    setTimeout(function () { document.getElementById("wrap").style.display = "block"; }, 2000);
+</script>
+
+</html>

@@ -1,0 +1,93 @@
+.china{
+	width: 100%;
+	/* background-image: url(../images/china_bg.png); */
+	background-size: cover;
+	height: 100vh;
+	/* margin-bottom: 10vh; */
+}
+.ditu{
+	float: left;
+	width: 50%;
+	min-width: 1047px;
+	height:100vh;
+	margin-left: 0vw;
+	/* margin-top: 12vh; */
+	position: relative;
+}
+.shi{
+    width: 94%;
+    height: 90vh;
+    border:4px solid #eee;
+    z-index: 9999;
+    background-color: #fff;
+	border-radius: 8px;
+	overflow: auto;
+}
+.shi button{
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	float: right;
+}
+.bg-blue{
+	background-color: aquamarine;
+}
+.shi h3{
+	display: block;
+	float: left;
+	font-size: 24px;
+	font-weight: 600;
+	color:#c7000b;
+	margin-top: 2vh;
+	width: 55%;
+	text-align: right;
+}
+.clearfix>img{
+	width: 50%;
+	margin-top: 2vh;
+}
+.none{
+    display: none;
+}
+#back{
+	position: absolute;
+	background-color: #c7000b;
+	border:0;
+	border-radius: 5px;
+	color:#fff;
+	font-size: 12px;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	z-index: 99;
+}
+.c-right{
+	width: 25%;
+	float: left;
+	margin-left: 13%;
+}
+.c-right img:first-child{
+	margin-top: 25vh;
+	width: 30%;
+}
+.c-right img:nth-child(2){
+	margin-top: 5vh;
+	width: 95%;
+}
+.c-right img:last-child{
+	margin-top: 9vh;
+	width: 55%;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width:1600px){
+
+    .ditu{
+		margin-left: 0;
+	}
+	.c-right{
+		margin-left: 1%;
+	}
+}
