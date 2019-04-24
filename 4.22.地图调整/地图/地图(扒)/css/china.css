@@ -46,8 +46,22 @@
 	width: 50%;
 	margin-top: 2vh;
 }
-.none{
-    display: none;
+.visibility{
+	visibility: hidden;
+}
+.show{
+	visibility: visible !important;
+}
+.showblock{
+	display: block !important;
+}
+/* .none{
+	display: none;
+} */
+.title{
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 #back{
 	position: absolute;
