@@ -362,6 +362,21 @@
         color: #004974;
         text-decoration: none;
       }
+
+      /* Back */
+      .back a{
+        width: 5px;
+        height: 5px;
+        padding: 0 20px;
+        display: fixed;
+        top: 0;
+        left: 0;
+        background-color: #1e88c7;
+      }
+      /* Back */
+      /* table */
+      
+      /* table */
     </style>
   </head>
 
@@ -381,6 +396,9 @@
         </form>
       </div>
       <!--  -->
+      <div class="back">
+        <a href="javascript:history.back(-1)">返回</a>
+      </div>
       <div class="nav">
         <p class="Essential-information1">基本信息</p>
         <div class="Customer-name">
@@ -825,13 +843,13 @@
         
         <!-- img -->
         <div class="wrapImg">
-            <img class="zoomify " data-duration="1000" data-easing="linear" data-scale="0.8" src="./images/timg.jpg" alt="">
+            <img class="zoomify real" data-duration="1000" data-easing="linear" data-scale="0.8" src="./images/timg.jpg" alt="">
         </div>
         <div class="wrapImg">
-            <img class="zoomify " data-duration="1000" data-easing="linear" data-scale="0.8" src="./images/timg (1).jpg" alt="">
+            <img class="zoomify real" data-duration="1000" data-easing="linear" data-scale="0.8" src="./images/timg (1).jpg" alt="">
         </div>
         <div class="wrapImg">
-            <img class="zoomify " data-duration="1000" data-easing="linear" data-scale="0.8" src="./images/timg (3).jpg" alt="">
+            <img class="zoomify real" data-duration="1000" data-easing="linear" data-scale="0.8" src="./images/timg (3).jpg" alt="">
         </div>
         <!-- img -->
       </div>
@@ -845,7 +863,9 @@
     $(function() {
       $('.zoomify').zoomify();
     });
-  </script>
+</script>
+  // table
+  
   <script>
     $('.Progress-record-switch').click(function() {
       $('.Documentary-stage1').toggle();
