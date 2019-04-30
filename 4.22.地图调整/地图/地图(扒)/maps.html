@@ -109,6 +109,8 @@
       <div class="ditu">
         <button id="back" class="none">返回全国</button>
         <div id="china-map"></div>
+
+
         <!-- 隐藏窗口变显示 -->
         <div class="shi visibility" id="drag" style="overflow:scroll-x;width:99%;height:50%">
             <div class="title">
@@ -121,29 +123,137 @@
                 </div>
             </div>
 
-            
-
             <!-- 表格 -->
             <table class="table table-hover ">
               <tr class="success">
                 <th>用户列表</th>
                 <th>详情</th>
+                <th>跟单阶段</th>
+                <th>审核状态</th>
+                <th>签收状态</th>
+                <th>招商部门</th>
+                <th>归属部门</th>
+                <th>时间</th>
               </tr>
               <tr class="active" >
                 <th>用户A</th>
                 <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
               </tr>
               <tr class="warning" >
                 <th>用户B</th>
                 <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
               </tr>
               <tr class="danger" >
                 <th>用户C</th>
                 <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
               </tr>
               <tr class="info" >
                 <th>用户D</th>
                 <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
+              </tr>
+              <tr class="active" >
+                <th>用户A</th>
+                <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
+              </tr>
+              <tr class="warning" >
+                <th>用户B</th>
+                <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
+              </tr>
+              <tr class="danger" >
+                <th>用户C</th>
+                <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
+              </tr>
+              <tr class="info" >
+                <th>用户D</th>
+                <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
+              </tr>
+              <tr class="active" >
+                <th>用户A</th>
+                <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
+              </tr>
+              <tr class="warning" >
+                <th>用户B</th>
+                <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
+              </tr>
+              <tr class="danger" >
+                <th>用户C</th>
+                <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
+              </tr>
+              <tr class="info" >
+                <th>用户D</th>
+                <th><a hef="./EjectPage/index.html">详情查看</a></th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>完成</th>
+                <th>XX部门</th>
+                <th>XX部门</th>
+                <th>2019年4月29日</th>
               </tr>
             </table>
             <!-- 表格 -->
@@ -157,7 +267,6 @@
             height="95%"
             frameborder="10"
             class="fenxian"
-            overflow-y="hidden"
             >
             </iframe>
             <!-- 分桢 -->
@@ -1157,7 +1266,7 @@
 <!-- table -->
 <script>
     $(".table a").click(function () {
-      console.log('1a');
+      // console.log('1a');
       
       $(".table").hide();
       $(".fenxian").show();
@@ -1350,7 +1459,8 @@
       oDrag.style.top = (document.documentElement.clientHeight - oDrag.offsetHeight) / 5 + "px";
     }
     $(".arrow").click(function () {
-      window.history.back()
+      $(".table").show();
+      $(".fenxian").hide();
     })
 </script>
 
