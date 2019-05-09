@@ -34,7 +34,8 @@
 	background-color: aquamarine;
 }
 .shi h3{
-	display: block;
+	/* display: block; */
+	display: none;
 	float: left;
 	font-size: 24px;
 	font-weight: 600;
