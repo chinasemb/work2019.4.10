@@ -1,0 +1,4 @@
+/* pages/classic/classic.wxss */
+.v-like{
+  margin-left: 110rpx;
+}

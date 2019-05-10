@@ -1,0 +1,4 @@
+<!--pages/classic/classic.wxml-->
+<view >
+  <v-like class="v-like"  like="{{likeStatus}}" count="{{likeCount}}"></v-like>
+</view>

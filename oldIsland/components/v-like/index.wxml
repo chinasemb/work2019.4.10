@@ -1,0 +1,10 @@
+<!--components/v-like/index.wxml-->
+<view class="container" bind:tap="onLike">
+    <view class="image-wrapper">
+      <image src="{{like ? yesSrc :noSrc}}"></image>
+     <text>
+       Star
+     </text>  
+    </view>
+    <text class="text2">{{count}}</text>
+</view>
