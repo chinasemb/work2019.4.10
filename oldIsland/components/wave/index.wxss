@@ -1,0 +1,99 @@
+/*************************水波纹**************************/
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    /* top: 0; */
+    margin: auto;
+    height: 400rpx;
+    background: #3e67d9;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 40%;
+    bottom: -1px;
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.2;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.3;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 150% 60px;
+}
+.waveAnimation .waveTop {
+-webkit-animation: move_wave 10s linear infinite;
+        animation: move_wave 10s linear infinite;
+/*  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;*/
+   -webkit-animation-delay: 3s;
+           animation-delay: 3s;
+           -webkit-animation-direction:alternate;
+                   animation-direction:alternate;
+}
+.waveMiddle {
+    background-size: 150% 70px;
+}
+.waveAnimation .waveMiddle {
+    -webkit-animation: move_wave 10s linear infinite;
+            animation: move_wave 10s linear infinite;
+            -webkit-animation-direction:alternate;
+                    animation-direction:alternate;
+
+}
+.waveBottom {
+    background-size: 100% 20px;
+}
+.waveAnimation .waveBottom {
+    -webkit-animation: move_wave 15s linear infinite;
+            animation: move_wave 15s linear infinite;
+}
+@-webkit-keyframes move_wave {
+    0% {
+        -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+                transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+                transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+                transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+@keyframes move_wave {
+    0% {
+        -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+                transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+                transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+                transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}

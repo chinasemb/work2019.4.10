@@ -1,0 +1,13 @@
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop" style="">
+    <div class="wave waveTop" style="">
+    	<image mode="aspectFill" src="image/flow.png" class="wh100" style=""></image>
+    </div>
+    <div class="wave waveMiddle" style="">
+    	<image mode="aspectFill" src="image/flow.png" class="wh100" style=""></image>
+    </div>
+    <div class="wave waveBottom" style="">
+    	<image mode="aspectFill" src="image/flow.png" class="wh100" style=""></image>
+    </div>
+  </div>
+</div>

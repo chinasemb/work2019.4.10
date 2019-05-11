@@ -1,4 +1,6 @@
 /* pages/classic/classic.wxss */
 .v-like{
   margin-left: 110rpx;
+  display: flex;
+  margin-top: 30rpx;
 }

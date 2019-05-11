@@ -1,29 +1,19 @@
-// pages/classic/classic.js
+// components/epsoid/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    likeCount: 1,
-    likeStatus: false
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // this.wave = this.selectComponent("#wave");
-    // this.wave.__hideInfo()
+
   },
-
-  /**
-   * 点赞与取消
-  */
-  // onLike: function(event) {
-  //   let behavior = event.detail.behavior
-
-  // }
 
   /**
    * 生命周期函数--监听页面初次渲染完成

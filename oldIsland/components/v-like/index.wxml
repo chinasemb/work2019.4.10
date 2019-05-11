@@ -1,10 +1,28 @@
 <!--components/v-like/index.wxml-->
-<view class="container" bind:tap="onLike">
+
+<!-- <view class="container" bind:tap="onLike">
+  <view class="image-wrapper">
+    <image src="{{like ? yesSrc :noSrc}}"></image>
+    <text>
+       Star
+     </text>
+  </view>
+  <a>
+    <text class="text2">{{count}}</text>
+  </a>
+</view> -->
+
+<view class="ripple" style="{{rippleStyle}}"></view>
+<view class="container2" bind:tap='containerTap1'>
+  <view class="container" bind:tap="onLike">
     <view class="image-wrapper">
       <image src="{{like ? yesSrc :noSrc}}"></image>
-     <text>
+      <text>
        Star
-     </text>  
+     </text>
     </view>
-    <text class="text2">{{count}}</text>
+    <a>
+      <text class="text2">{{count}}</text>
+    </a>
+  </view>
 </view>

@@ -4,7 +4,8 @@
     "pages/my/my",
     "pages/classic/classic",
     "pages/book-detail/book-detail",
-    "components/v-like/index"
+    "components/v-like/index",
+    "components/epsoid/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
