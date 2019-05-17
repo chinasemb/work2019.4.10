@@ -492,6 +492,8 @@
 
 <!-- 地图的JS start-->
   <script>
+
+    //数字转换成万 start
     function unitConvert(num) {
       if (num) {
         var moneyUnits = ['', '万'],
@@ -527,9 +529,11 @@
 
     // 金额转换万字单位 end
 
+    //获取地图和返回的节点
     var myChart = echarts.init(document.getElementById('china-map'));
     var oBack = document.getElementById('back');
 
+    //各省的省名的拼音数据
     var provinces = [
       'shanghai',
       'hebei',
@@ -565,43 +569,451 @@
       'xianggang',
       'aomen',
     ];
-
+    //各省的省中文名数据
     var provincesText = [
-      '上海',
-      '河北',
-      '山西',
-      '内蒙古',
-      '辽宁',
-      '吉林',
-      '黑龙江',
-      '江苏',
-      '浙江',
-      '安徽',
-      '福建',
-      '江西',
-      '山东',
-      '河南',
-      '湖北',
-      '湖南',
-      '广东',
-      '广西',
-      '海南',
-      '四川',
-      '贵州',
-      '云南',
-      '西藏',
-      '陕西',
-      '甘肃',
-      '青海',
-      '宁夏',
-      '新疆',
-      '北京',
-      '天津',
-      '重庆',
-      '香港',
-      '澳门',
+      {
+        id: '上海',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '河北',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '山西',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '内蒙古',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '辽宁',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '吉林',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '黑龙江',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '江苏',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '浙江',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '安徽',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '安徽',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '福建',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '江西',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '山东',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '河南',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '湖北',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '湖南',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '广东',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '广西',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '海南',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '四川',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '贵州',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '云南',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '西藏',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '陕西',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '甘肃',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '青海',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '宁夏',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '新疆',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '北京',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '天津',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '重庆',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '香港',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      },
+      {
+        id: '澳门',
+        threeLevel: [
+          "闵行区",
+          "芝罘区区",
+          "海港区",
+          "开发区",
+          "青龙区",
+          "卢龙区",
+          "山海关区",
+        ]
+      }
+      // '河北',
+      // '山西',
+      // '内蒙古',
+      // '辽宁',
+      // '吉林',
+      // '黑龙江',
+      // '江苏',
+      // '浙江',
+      // '安徽',
+      // '福建',
+      // '江西',
+      // '山东',
+      // '河南',
+      // '湖北',
+      // '湖南',
+      // '广东',
+      // '广西',
+      // '海南',
+      // '四川',
+      // '贵州',
+      // '云南',
+      // '西藏',
+      // '陕西',
+      // '甘肃',
+      // '青海',
+      // '宁夏',
+      // '新疆',
+      // '北京',
+      // '天津',
+      // '重庆',
+      // '香港',
+      // '澳门',
     ];
 
+    //各省的具体的数据
     var toolTipData = [
       {
         provinceName: '北京',
@@ -916,14 +1328,15 @@
     ];
     var seriesData = [];
 
-    // fuzhizhantie
+    // fuzhizhantie，循环各省的省名数据：省名，省值，省key，添加到seriesData里面
     for (var i = 0; i < toolTipData.length; i++) {
       seriesData[i] = {};
       seriesData[i].name = toolTipData[i].provinceName;
       seriesData[i].value = toolTipData[i].shopCount;
       seriesData[i].provinceKey = toolTipData[i].provinceKey;
     }
-    // 请求省市数据，传递provinceKey进行ajax请求 province(key)
+
+    // 请求市数据，传递provinceKey进行ajax请求 province(key)
     var provinceData = [
       {
         provinceName: null,
@@ -5104,6 +5517,7 @@
 
     ];
 
+    //循环市的数据添加到变量seriesDataPro
     var seriesDataPro = [];
     for (var i = 0; i < provinceData.length; i++) {
       seriesDataPro[i] = {};
@@ -5422,9 +5836,45 @@
           $('#back').removeClass('none');
           //遍历取到provincesText 中的下标  去拿到对应的省js
           for (var i = 0; i < provincesText.length; i++) {
-            if (param.name === provincesText[i]) {
+            if (param.name === provincesText[i].id) {
+                //显示对应省份的方法
+                showProvince(provinces[i], provincesText[i].id);
+                break;
+              }
+            }
+            if (param.componentType === 'series') {
+              var provinceName = param.name;
+              console.log(provinceName);
+              $('#box').css('display', 'block');
+              $('#box-title').html(provinceName);
+            }
+        });
+      } else {
+        // 省份，添加双击 回退到全国
+        //点击省份，拖拽的分桢显示
+        myChart.on('click', function() {
+          // initEcharts("china", "中国");
+        //   console.log(this._chartsViews[0].__model.coordinateSystem);
+          console.log(this);
+          
+          // for (var q = 0; q < this._chartsViews[0].__model.option.length; q++) {
+          //   if (this._chartsViews[0].__model._targetList[q].selected == true) {
+          //     console.log(this._chartsViews[0].__model._targetList[q].name);
+          //     console.log(this._chartsViews[0].__model._targetList[q].name);
+          //     $('#city').text(this._chartsViews[0].__model._targetList[q].name);
+          //   }
+          // }
+          // $('.shi').addClass('show');
+          // $('tbody').css({
+          //   "display": "",
+          // });
+
+          $('#back').removeClass('none');
+          //遍历取到provincesText 中的下标  去拿到对应的省js
+          for (var i = 0; i < provincesText.length; i++) {
+            if (param.name === provincesText[i].id) {
               //显示对应省份的方法
-              showProvince(provinces[i], provincesText[i]);
+              showProvince(provinces[i], provincesText[i].id);
               break;
             }
           }
@@ -5435,26 +5885,9 @@
             $('#box').css('display', 'block');
             $('#box-title').html(provinceName);
           }
-        });
-      } else {
-        // 省份，添加双击 回退到全国
-        //点击省份，拖拽的分桢显示
-        myChart.on('click', function() {
-          // initEcharts("china", "中国");
-        //   console.log(this._chartsViews[0].__model.coordinateSystem);
-          console.log(this);
-          
-          for (var q = 0; q < this._chartsViews[0].__model.option.length; q++) {
-            if (this._chartsViews[0].__model._targetList[q].selected == true) {
-              console.log(this._chartsViews[0].__model._targetList[q].name);
-              console.log(this._chartsViews[0].__model._targetList[q].name);
-              $('#city').text(this._chartsViews[0].__model._targetList[q].name);
-            }
-          }
-          $('.shi').addClass('show');
-          $('tbody').css({
-            "display": "",
-          });
+
+
+
         });
       }
     
@@ -5470,10 +5903,10 @@
               $('#back').removeClass('hidden');
               // 遍历取到provincesText 中的下标  去拿到对应的省js
               for (var i = 0; i < provincesText.length; i++) {
-                if (param.name === provincesText[i]) {
-                  mapName = provincesText[i];
+                if (param.name === provincesText[i].id) {
+                  mapName = provincesText[i].id;
                   //显示对应省份的方法
-                  showProvince(provinces[i], provincesText[i]);
+                  showProvince(provinces[i], provincesText[i].id);
                   break;
                 }
               }
@@ -5490,13 +5923,10 @@
       }
     }
 
-    // $('.shi .close').click(function() {
-    //   $('.shi').addClass('none');
-    // });
 
     // 展示对应的省
     function showProvince(pName, Chinese_) {
-      //这写省份的js都是通过在线构建工具生成的，保存在本地，需要时加载使用即可，最好不要一开始全部直接引入。
+      //这些省份的js都是通过在线构建工具生成的，保存在本地，需要时加载使用即可，最好不要一开始全部直接引入。
       loadBdScript(
         '$' + pName + 'JS',
         './js/map/province/' + pName + '.js',
@@ -5545,13 +5975,11 @@
     })
       $(".back a").on("click",function(){
 　  window.history.go(-1);
-      
  })
-
 </script>
 <!-- table -->
-<!-- 拖拽的iframe start-->
 
+<!-- 拖拽的iframe start-->
   <script type="text/javascript"> 
     /*-------------------------- +
     获取id, class, tagName
@@ -5742,7 +6170,6 @@
       $(".fenxian").hide();
     })
 </script>
-
 <!-- 拖拽的iframe end-->
 
 

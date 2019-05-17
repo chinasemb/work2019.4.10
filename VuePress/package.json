@@ -1,5 +1,8 @@
 {
-  "devDependencies": {
-    "vuepress": "^0.14.11"
-  }
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "本地开发": "above",
+        "docs:build": "vuepress build docs",
+        "打包上线": "above"
+    }
 }
